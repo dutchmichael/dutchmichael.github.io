@@ -30,7 +30,7 @@ twitter_username: dutchmichael
 github_username:  dutchmichael
 
 # Build settings
-theme: minima
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 
