@@ -55,10 +55,10 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     thread_safe (0.3.6)
-    tzinfo (1.2.7)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     tzinfo-data (1.2020.1)
-      tzinfo (>= 1.0.0)
+      tzinfo (>= 1.2.10)
     wdm (0.1.1)
 
 PLATFORMS
@@ -68,7 +68,7 @@ DEPENDENCIES
   hitchens-theme
   jekyll (~> 3.8)
   jekyll-feed (~> 0.12)
-  tzinfo (~> 1.2)
+  tzinfo (~> 1.2.10)
   tzinfo-data
   wdm (~> 0.1.1)
 
