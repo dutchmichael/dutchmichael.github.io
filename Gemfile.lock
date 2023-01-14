@@ -265,7 +265,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll
-  jekyll-feed (~> 0.12)
   kramdown-parser-gfm
   sassc
   tzinfo (~> 1.2.10)
