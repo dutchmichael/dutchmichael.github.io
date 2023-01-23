@@ -67,8 +67,8 @@ a:hover {
 }
 
 header {
-  padding-top: 25px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 header h1 {
@@ -93,12 +93,29 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 650px;
   margin: 0 auto;
 }
 
 #container .inner img {
   max-width: 100%;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 #downloads {
