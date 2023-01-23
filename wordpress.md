@@ -1,5 +1,6 @@
 ---
 layout: default
+title: WordPress Notes of ...
 ---
 
 ## WordPress Development

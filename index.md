@@ -1,5 +1,6 @@
 ---
 layout: default
+title: 
 ---
 ## View Mike's Notes Here
 [**My Notes**](./notes.html).
