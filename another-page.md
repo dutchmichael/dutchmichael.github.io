@@ -2,8 +2,10 @@
 layout: default
 ---
 
-## Welcome to another page
+## Another Page
 
-_yay_
+Place Information Here
+
+_Click here to got back to the home page_
 
 [back](./)
