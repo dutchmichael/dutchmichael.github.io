@@ -5,8 +5,8 @@ layout: default
 
 ## Mike's Contact Information
 
-	    <a href="mailto:m@dutchmichael.com">email</a></li>
-	    <a href="https://github.com/dutchmichael">github.com/dutchmichael</a></li>
+	    <a href="mailto:m@dutchmichael.com">email</a>
+	    <a href="https://github.com/dutchmichael">github.com/dutchmichael</a>
 
 		<a href="#">@dutchmichael</a></li>
 		<a href="#">dutchmichael.com</a></li>
