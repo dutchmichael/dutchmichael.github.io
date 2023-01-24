@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -33,6 +37,7 @@
 		#navbar {
 		  overflow: hidden;
 		  background-color: #333;
+		  position: relative;
 		}
 
 		#navbar a {
@@ -55,6 +60,21 @@
 		  color: white;
 		}
 		
+		/* Style the hamburger menu */
+		.navbar a.icon {
+		  background: black;
+		  display: block;
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		}
+		
+		/* Hide the links inside the navigation menu (except for logo/home) */
+		.navbar #myLinks {
+		  display: none;
+		}
+		
+		
 		.sticky {
 		  position: fixed;
 		  top: 0;
@@ -67,15 +87,8 @@
 		</style>
 			</head>
 			<body>
-				<!-- <div id="navbar">
-				  <a class="active" href="javascript:void(0)">Home</a>
-				  <a href="javascript:void(0)">About</a>
-				  <a href="javascript:void(0)">Contact</a>
-				  <a href="javascript:void(0)">Development</a>
-				  <a href="javascript:void(0)">History</a>
-				</div> -->
 			<div id="navbar">	
-			<!-- <ul>-->
+				
 			<a href="/">Home</a>
 			<a href="/about">About</a>
 			<!-- <li><a href="/blog">Blog</a></li> -->
@@ -83,8 +96,11 @@
         	<a href="/development">Development</a>
 			<a href="/history">History</a>
         	<!-- <li><a href="/resume">Resume</a></li> -->
-    		<!-- </ul> -->
 			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+			  </a>
 	</div>	
         <section id="downloads" class="clearfix">
           {% if site.show_downloads %}
@@ -117,6 +133,19 @@ function myFunction() {
   }
 }
 </script>
+
+<script>
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
         <footer>
         {% if site.github.is_project_page %}
           {{ site.title | default: site.github.repository_name }} is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a><br>
