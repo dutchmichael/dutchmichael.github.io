@@ -5,12 +5,14 @@ layout: default
 
 ## Mike's Contact Information
 
-	    <a href="mailto:m@dutchmichael.com">email</a>
-	    <a href="https://github.com/dutchmichael">github.com/dutchmichael</a>
+[Email Me](mailto:m@dutchmichael.com)
 
-		<a href="#">@dutchmichael</a></li>
-		<a href="#">dutchmichael.com</a></li>
-		<a href="#">midapex.com</a></li>
+	#	[Contact Me](mailto:m@dutchmichael.com)
+	#	<a href="mailto:m@dutchmichael.com">email</a>
+	#	<a href="https://github.com/dutchmichael">github.com/dutchmichael</a>
+	#	<a href="#">@dutchmichael</a></li>
+	#	<a href="#">dutchmichael.com</a></li>
+	#	<a href="#">midapex.com</a></li>
 
 Learning Ruby
 
